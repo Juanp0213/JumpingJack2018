@@ -115,12 +115,19 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
-        if(!jumping)
+        if(other.CompareTag("Hole"))
         {
-            StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * -1.2f));
-            currentFloor--;
-            if(currentFloor < 0)
-                currentFloor = 0;
+            if(!jumping)
+            {
+                StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * -1.2f));
+                currentFloor--;
+                if(currentFloor < 0)
+                    currentFloor = 0;
+                StartCoroutine(Stun());
+            }
+        }
+        else if(other.CompareTag("Enemy"))
+        {
             StartCoroutine(Stun());
         }
     }
