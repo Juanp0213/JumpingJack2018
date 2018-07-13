@@ -16,12 +16,21 @@ public class LevelManager : MonoBehaviour
     Holes[] holes;
     int currentHole;
 
+    public Enemy EnemyModel;
+    Enemy[] enemies;
+    public LevelData Level;
+
+
     public float OverallSpeed;
+
+    static int currentLevel;
 
     private void Start ()
     {
         CreateFloors();
         CreateHoles();
+        CreateEnemies();
+        Debug.Log("currenLevel");
     }
 
 
@@ -50,14 +59,13 @@ public class LevelManager : MonoBehaviour
         holes[0] = HoleModel;
         for(int i = 1; i < HolesAmount; i++)
         {
-            holes[i] = Instantiate<Holes>(HoleModel);
+            holes[i] = Instantiate(HoleModel);
             holes[i].transform.SetParent(HoleModel.transform.parent);
             holes[i].transform.position = Vector3.up * -10;
             holes[i].name = "Hole " + i;
         }
         SetHole(1);
         SetHole(-1);
-
     }
 
     public void SetHole (int d = 0)
@@ -90,8 +98,32 @@ public class LevelManager : MonoBehaviour
         currentHole++;
     }
 
+
+    void CreateEnemies ()
+    {
+        int enemiesAmount = Level.Levels[currentLevel].Enemies.Length;
+        enemies = new Enemy[enemiesAmount];
+
+        for(int i = 0; i < enemiesAmount; i++)
+        {
+            if(i == 0)
+                enemies[i] = EnemyModel;
+            else
+            {
+                enemies[i] = Instantiate(EnemyModel);
+                enemies[i].transform.SetParent(EnemyModel.transform.parent);
+            }
+            enemies[i].Set(Level.Levels[currentLevel].Enemies[i], this);
+
+
+        }
+    }
+
+
     public void Win ()
     {
         OverallSpeed = 0;
+        currentLevel++;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }
