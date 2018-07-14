@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
         CreateFloors();
         CreateHoles();
         CreateEnemies();
-        Debug.Log("currenLevel");
+        Debug.Log(currentLevel);
     }
 
 
@@ -91,7 +91,10 @@ public class LevelManager : MonoBehaviour
 
         if(d == 0)
         {
-            d = Random.Range(0, 100) > 50 ? 1 : -1;
+            if(currentHole < 5)
+                d = 1;
+            else
+                d = -1;
         }
 
         holes[currentHole].Set(f, new Vector3(Random.Range(-10, 10), InitialFloorPosition + f * FloorSpace, 0), d, this);

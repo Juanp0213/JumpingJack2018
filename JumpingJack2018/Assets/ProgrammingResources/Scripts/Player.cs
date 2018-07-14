@@ -68,9 +68,9 @@ public class Player : MonoBehaviour
 
     void Jump ()
     {
-        if(Physics.Linecast(transform.position, transform.position + Vector3.up * 1.2f))
+        if(Physics.Linecast(transform.position, transform.position + Vector3.up * manager.FloorSpace))
         {
-            StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * 1.2f));
+            StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * manager.FloorSpace));
             currentFloor++;
 
             manager.SetHole();
@@ -119,7 +119,7 @@ public class Player : MonoBehaviour
         {
             if(!jumping)
             {
-                StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * -1.2f));
+                StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * -manager.FloorSpace));
                 currentFloor--;
                 if(currentFloor < 0)
                     currentFloor = 0;
