@@ -11,6 +11,7 @@ public class LevelData : ScriptableObject
 [System.Serializable]
 public class LevelInfo
 {
+    public bool ExtraLife;
     public string FinishMessage;
     public EnemyData[] Enemies;
 }

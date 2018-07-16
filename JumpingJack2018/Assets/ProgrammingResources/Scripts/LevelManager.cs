@@ -23,7 +23,13 @@ public class LevelManager : MonoBehaviour
 
     public float OverallSpeed;
 
-    static int currentLevel;
+    static int currentLevel = 1;
+    static int score;
+    const int scoreBase = 5;
+
+
+    public GameObject WinScreen;
+    public GameObject GameOverScreen;
 
     private void Start ()
     {
@@ -66,6 +72,14 @@ public class LevelManager : MonoBehaviour
         }
         SetHole(1);
         SetHole(-1);
+    }
+
+
+    public void AddScore ()
+    {
+        SetHole();
+        score += scoreBase + (scoreBase * currentLevel);
+
     }
 
     public void SetHole (int d = 0)
@@ -127,6 +141,22 @@ public class LevelManager : MonoBehaviour
     {
         OverallSpeed = 0;
         currentLevel++;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        WinScreen.SetActive(true);
+        StartCoroutine(LoadDelay());
+    }
+
+
+    public void GameOver ()
+    {
+        OverallSpeed = 0;
+        currentLevel = 0;
+        GameOverScreen.SetActive(true);
+        StartCoroutine(LoadDelay());
+    }
+
+    IEnumerator LoadDelay ()
+    {
+        yield return new WaitForSeconds(2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 }

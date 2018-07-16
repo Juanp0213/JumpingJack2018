@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int StartHp;
+    static int hp = -1;
     public float LeftBorder;
     public float RightBorder;
+
+    public Animator Model;
 
     float speed
     {
@@ -31,6 +35,8 @@ public class Player : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         manager = FindObjectOfType<LevelManager>();
+        if(hp == -1)
+            hp = StartHp;
     }
 
     private void Update ()
@@ -59,10 +65,23 @@ public class Player : MonoBehaviour
         if(transform.position.x < LeftBorder)
             transform.position = new Vector3(RightBorder, transform.position.y, transform.position.z);
 
+        if(axis.x > 0)
+            Model.transform.localEulerAngles = Vector3.up * 90;
+        else if(axis.x < 0)
+            Model.transform.localEulerAngles = Vector3.up * -90;
+        else
+            Model.transform.localEulerAngles = Vector3.up * 180;
+
+        Model.SetFloat("Move", Mathf.Abs(axis.x));
+
+
         if(axis.y > 0)
         {
+            Model.SetFloat("Move", 0);
+            Model.transform.localEulerAngles = Vector3.up * 180;
             Jump();
         }
+
     }
 
 
@@ -73,7 +92,7 @@ public class Player : MonoBehaviour
             StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * manager.FloorSpace));
             currentFloor++;
 
-            manager.SetHole();
+            manager.AddScore();
         }
         else
         {
@@ -109,7 +128,14 @@ public class Player : MonoBehaviour
         if(checkHp)
         {
             if(currentFloor == 0)
+            {
                 Debug.Log("Hp-");
+                hp--;
+                if(hp <= 0)
+                {
+                    manager.GameOver();
+                }
+            }
         }
     }
 
@@ -134,8 +160,10 @@ public class Player : MonoBehaviour
 
     IEnumerator Stun ()
     {
+        Model.Play("Death");
         stun = true;
         yield return new WaitForSeconds(2);
+        Model.SetTrigger("Revive");
         stun = false;
     }
 
