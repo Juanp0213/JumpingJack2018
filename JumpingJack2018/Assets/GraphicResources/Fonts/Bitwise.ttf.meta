@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 31833c8a544f72a4da38321a399f0b1f
+guid: a3eb3023037e8374990d4533822babb5
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: orange juice
+  fontName: Bitwise
   fontNames:
-  - orange juice
+  - Bitwise
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

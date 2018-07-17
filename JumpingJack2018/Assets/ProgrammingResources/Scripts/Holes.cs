@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Holes : MonoBehaviour
 {
+    public Rigidbody PartA;
+    public Rigidbody PartB;
 
     public float LeftBorder;
     public float RightBorder;
@@ -29,13 +31,13 @@ public class Holes : MonoBehaviour
 
     LevelManager manager;
 
-    Rigidbody body;
     Vector3 velocity;
 
+    Rigidbody body;
 
-    private void Start ()
+    private void Awake ()
     {
-        body = GetComponent<Rigidbody>();
+        body = PartA;
     }
 
     private void Update ()
@@ -43,10 +45,10 @@ public class Holes : MonoBehaviour
         velocity.x = speed * direction;
         body.velocity = velocity;
 
-        if(transform.position.x > RightBorder)
+        if(body.transform.position.x > RightBorder)
             GoToNextFloor(LeftBorder);
 
-        if(transform.position.x < LeftBorder)
+        if(body.transform.position.x < LeftBorder)
             GoToNextFloor(RightBorder);
     }
 
@@ -54,13 +56,24 @@ public class Holes : MonoBehaviour
     {
         currentFloor = floor;
         direction = dir;
-        transform.position = pos;
+        body.transform.position = pos;
         manager = m;
+
+        if(dir == 1)
+            RightBorder -= 1.4f;
+        else
+            LeftBorder += 1.4f;
     }
 
 
     void GoToNextFloor (float xPos)
     {
+
+        if(body == PartA)
+            body = PartB;
+        else
+            body = PartA;
+
         if(direction == 1)
         {
             if(currentFloor == 0)
@@ -75,6 +88,7 @@ public class Holes : MonoBehaviour
             else
                 currentFloor++;
         }
-        transform.position = new Vector3(xPos, manager.InitialFloorPosition + currentFloor * manager.FloorSpace);
+
+        body.transform.position = new Vector3(xPos, manager.InitialFloorPosition + currentFloor * manager.FloorSpace);
     }
 }

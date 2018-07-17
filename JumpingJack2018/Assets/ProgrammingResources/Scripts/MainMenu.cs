@@ -32,10 +32,11 @@ public class MainMenu : MonoBehaviour
         while(t < 1)
         {
             TitleMask.fillAmount = Mathf.Lerp(0, 1, t);
-            t += Time.deltaTime;
+            t += Time.deltaTime * 0.5f;
             yield return null;
         }
 
+        TitleMask.fillAmount = 1;
         animFinish = true;
         while(true)
         {
@@ -44,7 +45,6 @@ public class MainMenu : MonoBehaviour
             StartMessage.enabled = false;
             yield return wait;
         }
-
     }
 
 }

@@ -28,15 +28,21 @@ public class Player : MonoBehaviour
     bool stun;
 
     LevelManager manager;
+    HUDManager hud;
 
     int currentFloor;
+    Coroutine stuned;
 
     private void Start ()
     {
+
         body = GetComponent<Rigidbody>();
         manager = FindObjectOfType<LevelManager>();
+        hud = FindObjectOfType<HUDManager>();
+
         if(hp == -1)
             hp = StartHp;
+        hud.UpdateHp(hp);
     }
 
     private void Update ()
@@ -131,6 +137,7 @@ public class Player : MonoBehaviour
             {
                 Debug.Log("Hp-");
                 hp--;
+                hud.UpdateHp(hp);
                 if(hp <= 0)
                 {
                     manager.GameOver();
@@ -141,27 +148,32 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
-        if(other.CompareTag("Hole"))
+        if(!jumping)
         {
-            if(!jumping)
+            if(other.CompareTag("Hole"))
             {
                 StartCoroutine(VerticalMovement(transform.position, transform.position + Vector3.up * -manager.FloorSpace));
                 currentFloor--;
                 if(currentFloor < 0)
                     currentFloor = 0;
-                StartCoroutine(Stun());
+
+                if(stuned != null)
+                    StopCoroutine(stuned);
+                stuned = StartCoroutine(Stun());
             }
-        }
-        else if(other.CompareTag("Enemy"))
-        {
-            StartCoroutine(Stun());
+            else if(other.CompareTag("Enemy"))
+            {
+                if(stuned != null)
+                    StopCoroutine(stuned);
+                stuned = StartCoroutine(Stun());
+            }
         }
     }
 
     IEnumerator Stun ()
     {
-        Model.Play("Death");
         stun = true;
+        Model.Play("Death");
         yield return new WaitForSeconds(2);
         Model.SetTrigger("Revive");
         stun = false;

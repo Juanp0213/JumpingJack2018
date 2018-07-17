@@ -23,19 +23,23 @@ public class LevelManager : MonoBehaviour
 
     public float OverallSpeed;
 
-    static int currentLevel = 1;
+    static int currentLevel;
     static int score;
+    static int hiScore;
     const int scoreBase = 5;
 
-
-    public GameObject WinScreen;
     public GameObject GameOverScreen;
+
+    HUDManager hud;
 
     private void Start ()
     {
         CreateFloors();
         CreateHoles();
         CreateEnemies();
+        hud = FindObjectOfType<HUDManager>();
+        hud.UpdateScore(score);
+        hud.SetHiScore(hiScore);
         Debug.Log(currentLevel);
     }
 
@@ -79,7 +83,7 @@ public class LevelManager : MonoBehaviour
     {
         SetHole();
         score += scoreBase + (scoreBase * currentLevel);
-
+        hud.UpdateScore(score);
     }
 
     public void SetHole (int d = 0)
@@ -136,12 +140,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-
+    [ContextMenu("asd")]
     public void Win ()
     {
         OverallSpeed = 0;
         currentLevel++;
-        WinScreen.SetActive(true);
+        hud.ShowNextLevel(Level.Levels[currentLevel - 1].FinishMessage, Level.Levels[currentLevel].Enemies.Length, Level.Levels[currentLevel - 1].ExtraLife);
         StartCoroutine(LoadDelay());
     }
 
@@ -152,11 +156,18 @@ public class LevelManager : MonoBehaviour
         currentLevel = 0;
         GameOverScreen.SetActive(true);
         StartCoroutine(LoadDelay());
+
+        if(score > hiScore)
+        {
+            hiScore = score;
+            hud.SetHiScore(hiScore);
+        }
+        score = 0;
     }
 
     IEnumerator LoadDelay ()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(8);
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 }
