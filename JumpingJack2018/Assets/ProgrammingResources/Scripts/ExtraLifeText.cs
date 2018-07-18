@@ -15,7 +15,8 @@ public class ExtraLifeText : MonoBehaviour
     {
         StartCoroutine(ColorSwap());
     }
-
+    
+    //swap colors between text and its containing box
     IEnumerator ColorSwap ()
     {
         while(true)

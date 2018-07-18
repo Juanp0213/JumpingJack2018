@@ -5,25 +5,19 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-
+    //gui elements
     public Image TitleMask;
     public Text StartMessage;
-    bool animFinish;
+    AudioSource source;
+    public AudioClip Clip;
 
     private void Start ()
     {
+        source = GetComponent<AudioSource>();
         StartCoroutine(Animate());
     }
 
-    private void Update ()
-    {
-        if(animFinish && Input.GetButtonDown("Submit"))
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        }
-    }
-
-
+    //logo and press start animation 
     IEnumerator Animate ()
     {
         float t = 0;
@@ -37,13 +31,28 @@ public class MainMenu : MonoBehaviour
         }
 
         TitleMask.fillAmount = 1;
-        animFinish = true;
+        StartCoroutine(WaitForButton());
         while(true)
         {
             StartMessage.enabled = true;
             yield return wait;
             StartMessage.enabled = false;
             yield return wait;
+        }
+    }
+
+    //wait for the player to press start to load the game scene
+    IEnumerator WaitForButton ()
+    {
+        while(true)
+        {
+            if(Input.GetButtonDown("Submit"))
+            {
+                source.PlayOneShot(Clip);
+                yield return new WaitForSeconds(0.2f);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            }
+            yield return null;
         }
     }
 

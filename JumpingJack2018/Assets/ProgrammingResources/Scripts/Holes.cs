@@ -1,25 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Holes : MonoBehaviour
 {
+    //Each hole has 2 parts to make the effect of exit by one side and entering for the other
     public Rigidbody PartA;
     public Rigidbody PartB;
 
+    Rigidbody body;
+    Vector3 velocity;
+
+    //Screen borders to appear on the opposite side
     public float LeftBorder;
     public float RightBorder;
 
-    float speed
-    {
-        get
-        {
-            if(manager == null)
-                return 0;
-            return manager.OverallSpeed;
-        }
-    }
+    //movement values
+    float speed;
     int direction;
+
+    //Id of the standing floor 
     int currentFloor;
     public int CurrentFloor
     {
@@ -29,22 +27,31 @@ public class Holes : MonoBehaviour
         }
     }
 
-    LevelManager manager;
+    //Scene values to calculate positions
+    float floorStartPos;
+    float floorSpacing;
+    int floorsAmount;
 
-    Vector3 velocity;
-
-    Rigidbody body;
 
     private void Awake ()
     {
+        //assings partA as default part
         body = PartA;
+        LevelManager.SpeedChange += SetSpeed;
     }
 
-    private void Update ()
+    //update its speed acording to game manager
+    void SetSpeed (float s)
     {
+        speed = s;
         velocity.x = speed * direction;
         body.velocity = velocity;
+    }
 
+
+    //check if is out of border to respawn on the opposite side of the screen
+    private void Update ()
+    {
         if(body.transform.position.x > RightBorder)
             GoToNextFloor(LeftBorder);
 
@@ -52,13 +59,21 @@ public class Holes : MonoBehaviour
             GoToNextFloor(RightBorder);
     }
 
-    public void Set (int floor, Vector3 pos, int dir, LevelManager m)
+    //receive values from the manager to set its position, scene and movement values
+    public void Set (int floor, Vector3 pos, int dir, float startPos, float spacing, int floors)
     {
         currentFloor = floor;
         direction = dir;
         body.transform.position = pos;
-        manager = m;
 
+        velocity.x = speed * direction;
+        body.velocity = velocity;
+
+        floorStartPos = startPos;
+        floorSpacing = spacing;
+        floorsAmount = floors;
+
+        //one of the borders is reduced to enter on the screen while exiting
         if(dir == 1)
             RightBorder -= 1.4f;
         else
@@ -66,29 +81,32 @@ public class Holes : MonoBehaviour
     }
 
 
+    //decide whats the next floor to go
     void GoToNextFloor (float xPos)
     {
-
+        //when changing the floor both parts change places
         if(body == PartA)
             body = PartB;
         else
             body = PartA;
 
+        //depending on its direction decides to go up or down
         if(direction == 1)
         {
             if(currentFloor == 0)
-                currentFloor = manager.FloorsAmount - 1;
+                currentFloor = floorsAmount - 1;
             else
                 currentFloor--;
         }
         else
         {
-            if(currentFloor == manager.FloorsAmount - 1)
+            if(currentFloor == floorsAmount - 1)
                 currentFloor = 0;
             else
                 currentFloor++;
         }
 
-        body.transform.position = new Vector3(xPos, manager.InitialFloorPosition + currentFloor * manager.FloorSpace);
+        body.transform.position = new Vector3(xPos, floorStartPos + (currentFloor * floorSpacing));
+        SetSpeed(speed);
     }
 }

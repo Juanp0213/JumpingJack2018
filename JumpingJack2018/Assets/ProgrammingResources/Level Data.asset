@@ -20,688 +20,499 @@ MonoBehaviour:
     Enemies:
     - StartFloor: 2
       StartXPos: 3
-      EnemyColor: {r: 0.1764706, g: 0.21568629, b: 1, a: 1}
   - ExtraLife: 0
     FinishMessage: Once found a peculiar track...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: Ther were dangers galore...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: Even holes in the floor...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 1
     FinishMessage: So he kept falling flat on his back
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: Quite soon he got used to the place...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: He could jump to escape from the chase...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: But without careful thought...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: His leaps came to nought...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 1
     FinishMessage: And he left with a mouch wider face...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: Things seemed just as bad as could be...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: Hostile faces were all Jack could see...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: He tried to stay calm...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: And to come to no harm...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 1
     FinishMessage: But more often got squashed like a flea...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: By now Jack was in a great flap...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: He felt like a rat in a trap...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: If only he'd guessed...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: That soon he could rest...
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
   - ExtraLife: 0
     FinishMessage: After jumping the very last gap.       - WELL DONE
     Enemies:
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
     - StartFloor: 0
       StartXPos: 0
-      EnemyColor: {r: 0, g: 0, b: 0, a: 0}
+  EnemyModels:
+  - {fileID: 1213324404125774, guid: e567327d23fc357488b8a2de76074262, type: 2}
+  - {fileID: 1367943136915794, guid: 9066c0314314f3d4199096d4050901a1, type: 2}
+  - {fileID: 1336570727843878, guid: e152ff45d848a8b49872f306b73a4717, type: 2}
+  - {fileID: 1872841578546114, guid: d9ccef72358130a4c9b4d72a5c7aa92d, type: 2}
+  - {fileID: 1934996294606238, guid: 45f956c7d4bfbfa428bbdd77876f33b2, type: 2}
+  - {fileID: 1088979734203054, guid: 4c7800da2ee835f4288edd904826d28e, type: 2}
+  - {fileID: 1557942312260232, guid: 8a984dcae3b7abd46824847a1cd9408d, type: 2}
+  - {fileID: 1720742391198288, guid: 377badb31c4697d4c8d1090c98dd271f, type: 2}
+  - {fileID: 1778774554513626, guid: 5fbbad33876f70b46848290f7687bc2a, type: 2}
+  - {fileID: 1473892804735202, guid: 94f34999db8f8754ea293643704f5a82, type: 2}
+  - {fileID: 1789843481755610, guid: 426c84122d644cb4483dd3f9ec088f92, type: 2}
+  - {fileID: 1160138040408030, guid: 22d7e3e846d07ba4597fc891e1daa6cb, type: 2}
+  - {fileID: 1530044742492612, guid: 4ddc47d14e5045e4081ee1865e11448c, type: 2}
+  - {fileID: 1830447246141330, guid: f70bed20e17883343bae7daf4bcf1b02, type: 2}
+  - {fileID: 1927064968102956, guid: 7e52cb1640422d34eae7e564206e7d66, type: 2}
+  - {fileID: 1132536020300524, guid: dcdf123f8601f374cb2f4482a78a39b3, type: 2}
+  - {fileID: 1407766373923228, guid: 89b2f48d85c33bb4f985fa2bd822e6d7, type: 2}
+  - {fileID: 1472297172600520, guid: a3575a320d22a604f90a98c99804be75, type: 2}
+  - {fileID: 1577360320138866, guid: 78882d6952c0fae45b84fa3ac63e5d30, type: 2}
+  - {fileID: 1365210965232300, guid: 75bcfb134e9d96f49955957be33de1dd, type: 2}

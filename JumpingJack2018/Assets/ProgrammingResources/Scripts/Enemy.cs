@@ -1,63 +1,80 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+    //Screen borders to appear on the opposite side
     public float LeftBorder;
     public float RightBorder;
 
-    float speed
-    {
-        get
-        {
-            if(manager == null)
-                return 0;
-            return -manager.OverallSpeed;
-        }
-    }
+    //Id of the standing floor 
     int currentFloor;
-
-    LevelManager manager;
 
     Rigidbody body;
     Vector3 velocity;
 
+    //Scene values to calculate positions
+    float floorStartPos;
+    float floorsSpacing;
+    int floorsAmount;
 
-    private void Start ()
+
+    private void Awake ()
     {
+        //gets its own rigidbody
         body = GetComponent<Rigidbody>();
+
+        //suscribe to know when game speed change
+        LevelManager.SpeedChange += SetSpeed;
+    }
+
+    //update its speed acording to game manager
+    void SetSpeed (float s)
+    {
+        velocity.x = -s;
+        body.velocity = velocity;
     }
 
     private void Update ()
     {
-        velocity.x = speed;
-        body.velocity = velocity;
-
+        //check if is out of border to respawn on the opposite side of the screen
         if(transform.position.x < LeftBorder)
             GoToNextFloor(RightBorder);
     }
 
-    public void Set (EnemyData data, LevelManager m)
+    //receive values from the manager to set its position and scene values
+    public void Set (int startFloor, float xPos, GameObject model, float startPos, float spacing, int floors)
     {
-        manager = m;
-        currentFloor = data.StartFloor;
-        transform.position = new Vector3(data.StartXPos, manager.InitialFloorPosition + currentFloor * manager.FloorSpace + 0.45f);
+        floorStartPos = startPos;
+        floorsSpacing = spacing;
+        floorsAmount = floors;
+
+        currentFloor = startFloor;
+        //if is on the top floor take a position off screen
+        if(currentFloor == floorsAmount - 1)
+            transform.position = new Vector3(xPos, floorStartPos + (currentFloor * floorsSpacing) + 5f);
+        else
+            transform.position = new Vector3(xPos, floorStartPos + (currentFloor * floorsSpacing) + 0.075f);
+
+        //set the model inside
+        model = Instantiate(model);
+        model.transform.SetParent(transform);
+        model.transform.localPosition = Vector3.zero;
     }
 
-
+    //decide whats the next floor to go
     void GoToNextFloor (float xPos)
     {
-
-        if(currentFloor == manager.FloorsAmount - 1)
+        if(currentFloor == floorsAmount - 1)
             currentFloor = 0;
         else
             currentFloor++;
 
-        if(currentFloor == manager.FloorsAmount - 1)
-            transform.position = new Vector3(xPos, manager.InitialFloorPosition + currentFloor * manager.FloorSpace + 5f);
+        //if is on the top floor take a position off screen
+        if(currentFloor == floorsAmount - 1)
+            transform.position = new Vector3(xPos, floorStartPos + (currentFloor * floorsSpacing) + 5f);
         else
-            transform.position = new Vector3(xPos, manager.InitialFloorPosition + currentFloor * manager.FloorSpace + 0.45f);
+            transform.position = new Vector3(xPos, floorStartPos + (currentFloor * floorsSpacing) + 0.075f);
 
     }
 }
